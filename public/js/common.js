@@ -21,4 +21,11 @@ $(document).ready(function () {
     });
 
     $(window).resize();
+
+    setInterval(function(){
+        var last = $(".review-item:last-child");
+        console.log(last);
+        $(".review-list").prepend(last[0].outerHTML);
+        $(last).remove();
+    },2000);
 })
