@@ -23,9 +23,9 @@ $(document).ready(function () {
     $(window).resize();
 
     setInterval(function(){
-        var last = $(".review-item:last-child");
+        var last = $(".review-item:first-child");
         console.log(last);
-        $(".review-list").prepend(last[0].outerHTML);
+        $(".review-list").append(last[0].outerHTML);
         $(last).remove();
     },2000);
 })
