@@ -212,8 +212,24 @@
     .background-white {
         background-color: #ffffff;
     }
-    .background-highlight{
+    .background-highlight {
         background-color: #376e80;
+    }
+    .foryou::after {
+        content: '';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        background-color: #376e80;
+        border-radius: 50%;
+        top: 50%;
+        right: -27px;
+        transform: translate(0%, -50%);
+        color: #ffffff;
+        z-index: 10;
+        line-height: 48px;
     }
     .container {
         width: 100%;
@@ -265,12 +281,11 @@
         color: #21232a;
         border-color: #ffffff;
     }
-    .button-highlight{
+    .button-highlight {
         background-color: #376e80;
         color: #ffffff;
         border-color: #376e80;
     }
-
     .align-left {
         text-align: left;
     }
@@ -368,9 +383,13 @@
     }
     .v-padding-4 {
         padding-top: 48px !important;
-        padding-bottom: 32px !important;
+        padding-bottom: 48px !important;
     }
     .v-padding-5 {
+        padding-top: 56px !important;
+        padding-bottom: 56px !important;
+    }
+    .v-padding-6 {
         padding-top: 64px !important;
         padding-bottom: 64px !important;
     }
@@ -392,11 +411,11 @@
     }
     .h-padding-4 {
         padding-left: 48px !important;
-        padding-right: 32px !important;
+        padding-right: 48px !important;
     }
     .h-padding-5 {
-        padding-left: 64px !important;
-        padding-right: 64px !important;
+        padding-left: 56px !important;
+        padding-right: 56px !important;
     }
     .teacher {
         position: relative;
@@ -538,6 +557,11 @@
     .partition-12 {
         width: 100%;
     }
+    .square {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+    }
     .clearfix:before,
     .clearfix:after {
         display: block;
@@ -563,5 +587,15 @@
         display: block;
         float: unset;
         margin-bottom: 1em;
-      }
+    }
+    .foryou{
+        margin-bottom: 0;
+    }
+    .foryou::after {
+        top: unset;
+        bottom: -27px;
+        left: 50%;
+        right: unset;
+        transform: translate(-50%, 0%);
+    }
 }
