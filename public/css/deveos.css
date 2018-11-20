@@ -516,24 +516,23 @@
         width: auto;
         height: auto;
         position: relative;
-        display: inline-block;
         vertical-align: middle;
-        padding: 10px;
-        background-color: #21232a;
-        color: #ffffff;
-        font-size: 1.5em;
+        /* padding: 10px; */
+        display: inline-block;
+        /* background-color: #21232a; */
+        color: #21232a;
+        font-size: 1.2em;
         font-weight: 500;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
         letter-spacing: -0.4px;
-        color: #ffffff;
         margin-right: 15px;
         margin-bottom: 4px;
     }
     .step-bar {
         width: 32px;
-        height: 6px;
+        height: 4px;
         background-color: #9b9b9b;
         display: inline-block;
         margin-right: 15px;
