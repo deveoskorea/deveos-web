@@ -193,6 +193,7 @@
         background-size: cover;
         background-position: 50% 50%;
         background-repeat: no-repeat;
+        overflow-x: hidden;
     }
     .content-center {
         display: flex;
@@ -664,22 +665,30 @@
         content: '';
         clear: both;
     }
-
-    .floating{
-        width: 64px;
-        height: 64px;
+    .floating {
+        width: auto;
+        height: 128px;
+        padding: 0px 20px 0px 128px;
         display: inline-block;
         position: fixed;
         right: 48px;
         bottom: 48px;
         background-color: #ffeb00;
-        color: #ffffff;
-        border-radius: 50%;
+        color: #3c1e1e;
+        border-radius: 12px;
         background-image: url(https://s3.ap-northeast-2.amazonaws.com/deveos/kakaolink_btn_medium.png);
-        background-size: 80%;
-        background-position: 50% 50%;
+        background-size: auto 100%;
+        background-position:0px 50%;
+        line-height: 120px;
         background-repeat: no-repeat;
         cursor: pointer;
+        z-index: 200;
+        font-size: 2em;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    .footer {
+        z-index: 300;
     }
 }
 
@@ -690,7 +699,7 @@
     }
 }
 
-@media screen and (max-width: 640.1px) {
+@media screen and (max-width: 640px) {
     body {
         font-size: 13px;
     }
@@ -738,6 +747,12 @@
         display: inline-block;
         margin-right: unset;
         margin-bottom: 4px;
+    }
+}
+
+@media screen and (min-width: 640.1px) {
+    .mobileOnly {
+        display: none;
     }
 }
 
