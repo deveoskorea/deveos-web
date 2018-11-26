@@ -308,6 +308,10 @@
         cursor: pointer;
         user-select: none;
     }
+    .button.button-small{
+        padding: 9px 15px;
+        font-size: 1.2em;
+    }
     .button-white {
         background-color: #ffffff;
         color: #21232a;
