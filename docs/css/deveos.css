@@ -271,7 +271,7 @@
         margin: 0 auto;
     }
     .text-title {
-        font-size: 3em;
+        font-size: 2em;
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
@@ -307,6 +307,10 @@
         margin-bottom: .2em;
         cursor: pointer;
         user-select: none;
+    }
+    .button.button-small{
+        padding: 9px 15px;
+        font-size: 1.2em;
     }
     .button-white {
         background-color: #ffffff;
