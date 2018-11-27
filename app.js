@@ -35,7 +35,31 @@ app.use(function (req, res, next) {
 var pages = require("node-github-pages")(app, {
   static: "public"
 });
-pages.renderFiles([{ "view": "index", "url": "", "options": {} }])
+pages.renderFiles([{
+  "view": "index",
+  "url": "",
+  "options": {}
+},
+{
+  "view": "cource",
+  "url": "/cource",
+  "options": {}
+},
+{
+  "view": "application",
+  "url": "/application",
+  "options": {}
+},
+{
+  "view": "openclass",
+  "url": "/openclass",
+  "options": {}
+},
+{
+  "view": "contact",
+  "url": "/contact",
+  "options": {}
+}]);
 
 // error handler
 app.use(function (err, req, res, next) {
