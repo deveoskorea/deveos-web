@@ -46,6 +46,26 @@ pages.renderFiles([{
   "options": {}
 },
 {
+  "view": "course-detail-1",
+  "url": "/course/1",
+  "options": {}
+},
+{
+  "view": "course-detail-2",
+  "url": "/course/2",
+  "options": {}
+},
+{
+  "view": "course-detail-3",
+  "url": "/course/3",
+  "options": {}
+},
+{
+  "view": "course-detail-4",
+  "url": "/course/4",
+  "options": {}
+},
+{
   "view": "application",
   "url": "/application",
   "options": {}

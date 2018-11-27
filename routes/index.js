@@ -9,7 +9,7 @@ router.get('/course', function (req, res, next) {
   res.render('course', { title: 'Express' });
 });
 router.get('/course/:id', function (req, res, next) {
-  res.render('course-detail', { title: 'Express' });
+  res.render('course-detail-' + req.params.id, { title: 'Express' });
 });
 router.get('/application', function (req, res, next) {
   res.render('application', { title: 'Express' });
