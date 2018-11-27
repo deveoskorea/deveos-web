@@ -271,7 +271,7 @@
         margin: 0 auto;
     }
     .text-title {
-        font-size: 3em;
+        font-size: 2em;
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
@@ -307,6 +307,10 @@
         margin-bottom: .2em;
         cursor: pointer;
         user-select: none;
+    }
+    .button.button-small{
+        padding: 9px 15px;
+        font-size: 1.2em;
     }
     .button-white {
         background-color: #ffffff;
@@ -667,8 +671,8 @@
     }
     .floating {
         width: auto;
-        height: 128px;
-        padding: 0px 20px 0px 128px;
+        height: 64px;
+        padding: 0px 12px 0px 64px;
         display: inline-block;
         position: fixed;
         right: 48px;
@@ -677,15 +681,18 @@
         color: #3c1e1e;
         border-radius: 12px;
         background-image: url(https://s3.ap-northeast-2.amazonaws.com/deveos/kakaolink_btn_medium.png);
-        background-size: auto 100%;
-        background-position:0px 50%;
-        line-height: 120px;
+        background-size: auto 80%;
+        background-position: 8px 50%;
+        line-height: 60px;
         background-repeat: no-repeat;
         cursor: pointer;
         z-index: 200;
-        font-size: 2em;
+        font-size: 1.2em;
         text-decoration: none;
         font-weight: 700;
+        -webkit-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.2);
     }
     .footer {
         z-index: 300;
