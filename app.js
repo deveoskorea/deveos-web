@@ -41,8 +41,8 @@ pages.renderFiles([{
   "options": {}
 },
 {
-  "view": "cource",
-  "url": "/cource",
+  "view": "course",
+  "url": "/course",
   "options": {}
 },
 {
