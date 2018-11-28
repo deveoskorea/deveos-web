@@ -242,7 +242,7 @@
     .background-highlight {
         background-color: #376e80;
     }
-    .background-video {
+    .background-video, .background-image {
         width: 100%;
         height: 100%;
         position: absolute;
