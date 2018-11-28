@@ -740,6 +740,9 @@
         font-size: 14px;
     }
     .container {}
+    .header{
+        overflow-y: visible;
+    }
     .header .header-menu {
         width: 100%;
         height: 100%;
