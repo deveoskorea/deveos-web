@@ -6,6 +6,8 @@
         -moz-box-sizing: border-box;
         -ms-box-sizing: border-box;
         box-sizing: border-box;
+        word-break: keep-all;
+        word-wrap: break-word;
     }
     dd,
     a,
@@ -148,6 +150,17 @@
         text-decoration: none;
         box-sizing: border-box;
     }
+    .header .header-more {
+        width: 64px;
+        height: 64px;
+        line-height: 64px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 2em;
+        color: #ffffff;
+        text-align: center;
+    }
     .header .header-menu a.highlight::after {
         content: '';
         position: absolute;
@@ -162,6 +175,15 @@
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
         transform: translateY(-50%);
+    }
+    .header .header-menu a.selected,
+    .header .header-menu a:hover,
+    .header .header-menu a.selected::after,
+    .header .header-menu a:hover::after {
+        /* color: #376e80;
+        border-color: #376e80; */
+        text-decoration: underline;
+        font-weight: 700;
     }
     .logo {
         width: 256px;
@@ -308,7 +330,7 @@
         cursor: pointer;
         user-select: none;
     }
-    .button.button-small{
+    .button.button-small {
         padding: 9px 15px;
         font-size: 1.2em;
     }
@@ -706,11 +728,39 @@
     }
 }
 
+@media screen and (max-width: 840px) {
+    .header .header-menu a {
+        padding: 0 12px;
+        font-size: .9em;
+    }
+}
+
 @media screen and (max-width: 640px) {
     body {
-        font-size: 13px;
+        font-size: 14px;
     }
     .container {}
+    .header .header-menu {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        right: -100%;
+        top: 64px;
+        background-color: #21232a;
+        text-align: right;
+        -webkit-transition: right .2s ease-in-out;
+        -moz-transition: right .2s ease-in-out;
+        -o-transition: right .2s ease-in-out;
+        transition: right .2s ease-in-out;
+    }
+    .header .header-menu.show {
+        right: 0;
+    }
+    .header .header-menu a {
+        display: inline-block;
+        padding: 0 20px;
+        font-size: 1.2em;
+    }
     .partition {
         width: 100% !important;
         display: block;

@@ -22,10 +22,28 @@ $(document).ready(function () {
 
     $(window).resize();
 
-    setInterval(function(){
+    setInterval(function () {
         var last = $(".review-item:first-child");
         console.log(last);
         $(".review-list").append(last[0].outerHTML);
         $(last).remove();
-    },2000);
+    }, 2000);
+
+
+    var changeCurrentHeaderMenuColor = function () {
+        var i = 0;
+        var menus = $(".header-menu a");
+        for (i = 0; i < menus.length; i++) {
+            if (window.location.href.indexOf($(menus[i]).attr("href")) > 0) {
+                $(menus[i]).addClass("selected");
+                break;
+            }
+        }
+    }
+
+
+    $("body").on("click",".header-more",function(){
+        $(".header-menu").toggleClass("show");
+    })
+    changeCurrentHeaderMenuColor();
 })
