@@ -752,6 +752,7 @@
         -moz-transition: right .2s ease-in-out;
         -o-transition: right .2s ease-in-out;
         transition: right .2s ease-in-out;
+        z-index: 2000;
     }
     .header .header-menu.show {
         right: 0;
