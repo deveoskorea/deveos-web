@@ -160,6 +160,7 @@
         font-size: 2em;
         color: #ffffff;
         text-align: center;
+        z-index: 5000;
     }
     .header .header-menu a.highlight::after {
         content: '';
