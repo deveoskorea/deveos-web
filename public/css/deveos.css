@@ -744,7 +744,10 @@
     }
     .container {}
     .header{
-        overflow-y: visible;
+        overflow: visible;
+    }
+    .header .header-right{
+        overflow: visible;
     }
     .header .header-menu {
         width: 100%;
