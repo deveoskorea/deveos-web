@@ -42,8 +42,18 @@ $(document).ready(function () {
     }
 
 
-    $("body").on("click",".header-more",function(){
+    $("body").on("click", ".header-more", function () {
         $(".header-menu").toggleClass("show");
     })
     changeCurrentHeaderMenuColor();
+
+
+
+    $("body").on("click", ".openclass-item", function (e) {
+        e.preventDefault();
+        $(".openclass-item.show").html($(".openclass-item.show").html());
+        $(".openclass-item").removeClass("show");
+        $(this).addClass("show");
+
+    })
 })
