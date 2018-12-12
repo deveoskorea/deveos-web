@@ -42,8 +42,25 @@ $(document).ready(function () {
     }
 
 
-    $("body").on("click",".header-more",function(){
+    $("body").on("click", ".header-more", function () {
         $(".header-menu").toggleClass("show");
     })
     changeCurrentHeaderMenuColor();
+
+
+
+    $("body").on("click", ".openclass-item", function (e) {
+        e.preventDefault();
+        var isClose = false;
+        if ($(this).hasClass("show")) {
+            isClose = true;
+        }
+        $(".openclass-item.show").html($(".openclass-item.show").html());
+        $(".openclass-item").removeClass("show");
+
+        if(!isClose){
+            $(this).addClass("show");
+        }
+
+    })
 })
