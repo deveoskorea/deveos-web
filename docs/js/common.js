@@ -51,9 +51,16 @@ $(document).ready(function () {
 
     $("body").on("click", ".openclass-item", function (e) {
         e.preventDefault();
+        var isClose = false;
+        if ($(this).hasClass("show")) {
+            isClose = true;
+        }
         $(".openclass-item.show").html($(".openclass-item.show").html());
         $(".openclass-item").removeClass("show");
-        $(this).addClass("show");
+
+        if(!isClose){
+            $(this).addClass("show");
+        }
 
     })
 })

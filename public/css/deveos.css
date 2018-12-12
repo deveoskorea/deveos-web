@@ -257,9 +257,9 @@
         width: 100%;
         height: auto;
         position: relative;
-        border-radius: 29px;
-        box-shadow: 0 4px 8px 0 #9b9b9b;
-        background-color: #c8d5e4;
+        border: 1px solid #263995;
+        /* box-shadow: 0 4px 8px 0 #9b9b9b; */
+        background-color: #ffffff;
     }
     .title-bar {
         width: 100%;
@@ -272,6 +272,17 @@
         width: 30%;
         max-width: 170px;
         height: 100%;
+        background-color: #263995;
+        display: inline-block;
+        content: '';
+        /* position: absolute;
+        left: 0;
+        top: 0; */
+    }
+    .program .title-bar::after {
+        width: 80%;
+        /* max-width: 170px; */
+        height: 2px;
         background-color: #263995;
         display: inline-block;
         content: '';
@@ -361,6 +372,8 @@
         -moz-transition: all .125s ease-in-out;
         -o-transition: all .125s ease-in-out;
         transition: all .125s ease-in-out;
+        padding: 5px;
+        background-color: #fafafa;
     }
     .openclass-list .openclass-item:hover {
         box-shadow: 0 4px 8px 0 #9b9b9b;
@@ -431,7 +444,7 @@
         border: 1px solid transparent;
         border-radius: 2.5em;
         text-decoration: none;
-        font-size: 1.5em;
+        font-size: 1.2em;
         color: #21232a;
         font-weight: bold;
         font-style: normal;
@@ -445,7 +458,7 @@
     }
     .button.button-small {
         padding: 9px 15px;
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .button-white {
         background-color: #ffffff;
@@ -456,6 +469,15 @@
         background-color: #263995;
         color: #ffffff;
         border-color: #263995;
+    }
+    .button-glass {
+        background-color: transparent;
+        color: #263995;
+        border-color: #263995;
+    }
+    .button-glass:hover{
+        background-color: #263995;
+        color: #ffffff;
     }
     .align-left {
         text-align: left;
