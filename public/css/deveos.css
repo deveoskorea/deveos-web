@@ -290,6 +290,21 @@
         left: 0;
         top: 0; */
     }
+    .apply-teacher {
+        width: 50%;
+        max-width: 512px;
+        height: auto;
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        overflow: visible;
+    }
+    .apply-teacher img {
+        width: 100%;
+        height: auto;
+        -webkit-filter: drop-shadow(5px 5px 5px #aaa);
+        filter: drop-shadow(5px 5px 5px #aaa);
+    }
     .li {
         width: 100%;
         height: auto;
@@ -475,7 +490,7 @@
         color: #263995;
         border-color: #263995;
     }
-    .button-glass:hover{
+    .button-glass:hover {
         background-color: #263995;
         color: #ffffff;
     }
@@ -946,6 +961,24 @@
     }
     .teacher .teacher-picture img {
         width: 100%;
+    }
+    .apply-teacher {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: block;
+        right: unset;
+        bottom: unset;
+        text-align: center;
+        
+    }
+    .apply-teacher img {
+        width: 70%;
+        height: auto;
+        position: relative;
+        display: inline-block;
+        -webkit-filter: unset;
+        filter: unset;
     }
     .step-text {
         display: block;

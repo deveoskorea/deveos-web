@@ -11,6 +11,9 @@ router.get('/course', function (req, res, next) {
 router.get('/course/:id', function (req, res, next) {
   res.render('course-detail-' + req.params.id, { title: 'Express' });
 });
+router.get('/test', function (req, res, next) {
+  res.render('apply-detail');
+});
 router.get('/application', function (req, res, next) {
   res.render('application', { title: 'Express' });
 });
