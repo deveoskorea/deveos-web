@@ -5,17 +5,17 @@ var router = express.Router();
 router.get('/', function (req, res, next) {
   res.render('index', { title: 'Express' });
 });
-router.get('/course', function (req, res, next) {
+router.get('/program', function (req, res, next) {
   res.render('course', { title: 'Express' });
-});
-router.get('/course/:id', function (req, res, next) {
-  res.render('course-detail-' + req.params.id, { title: 'Express' });
 });
 router.get('/test', function (req, res, next) {
   res.render('apply-detail');
 });
-router.get('/application', function (req, res, next) {
+router.get('/apply', function (req, res, next) {
   res.render('application', { title: 'Express' });
+});
+router.get('/apply/:id', function (req, res, next) {
+  res.render('course-detail-' + req.params.id, { title: 'Express' });
 });
 router.get('/openclass', function (req, res, next) {
   res.render('openclass');
