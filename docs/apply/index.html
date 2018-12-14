@@ -1,4 +1,88 @@
-<%- include("header") %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="/css/deveos.css">
+	<title>devEOS</title>
+	<meta name="title" content="devEOS">
+	<meta name="description" content="한국 EOS 개발자 커뮤니티">
+	<meta name="thumbnail" content="https://s3.ap-northeast-2.amazonaws.com/deveos/DEVEOS+LOGO+(Medium).png">
+	<meta name="keywords" content="EOS,블록체인,이오스,개발자,이오스개발,EOS개발,블록체인개발,커뮤니티,개발자커뮤니티,Dev,Developers,EOSKOREA,devEOS,데비오스,데브이오스">
+	<meta name="author" content="https://github.com/honeymaro">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@langchain">
+	<meta name="twitter:creator" content="https://github.com/honeymaro">
+	<meta name="twitter:image" content="https://s3.ap-northeast-2.amazonaws.com/deveos/DEVEOS+LOGO+(Medium).png">
+	<meta name="twitter:title" content="devEOS">
+	<meta name="twitter:description" content="한국 EOS 개발자 커뮤니티">
+
+	<meta property="og:title" content="devEOS" />
+	<meta property="og:site_name" content="devEOS" />
+	<meta property="og:type" content="page" />
+	<meta property="og:url" content="https://deveos.org" />
+	<meta property="og:image" content="https://s3.ap-northeast-2.amazonaws.com/deveos/DEVEOS+LOGO+(Medium).png" />
+	<meta property="og:description" content="한국 EOS 개발자 커뮤니티" />
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+	 crossorigin="anonymous">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125402791-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-125402791-1');
+	</script>
+
+	<!-- Google Tag Manager -->
+	<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-TL8B6X6');
+	</script>
+	<!-- End Google Tag Manager -->
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="header-left">
+				<a href="/">
+					<div class="logo small" style="margin-top: 8px;"></div>
+				</a>
+			</div>
+			<div class="header-right">
+				<div class="header-menu">
+					<a href="/program">프로그램</a>
+					<div class="mobileOnly"></div>
+					<a href="/apply">수강신청</a>
+					<div class="mobileOnly"></div>
+					<a href="/contact">고객센터</a>
+					<div class="mobileOnly"></div>
+					<a href="/openclass" class="highlight">무료수업듣기</a>
+					<div class="mobileOnly"></div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<a class="header-more mobileOnly" href="#">
+				<i class="fas fa-bars"></i>
+			</a>
+		</div>	
+	</div>
 <div class="section background-black content-center color-white" style="background-image: url('https://s3.ap-northeast-2.amazonaws.com/deveos/%EC%88%98%EA%B0%95%EC%8B%A0%EC%B2%AD+%EB%A9%94%EC%9D%B8%EC%9D%B4%EB%AF%B8%EC%A7%80+(Medium).jpg');">
     <div class="background-image" style="background-color: rgba(0,0,0,.6);"></div>
     <div class="calHeight" heightRatio="0.2"></div>
@@ -190,4 +274,32 @@
         <div class="clearfix"></div>
     </div>
 </div>
-<%- include("footer") %>
+<script src="/js/common.js"></script>
+
+<a id="btn_floating_kakao" class="floating" href="https://goto.kakao.com/@eosdev" target="_blank">문의하기</a>
+
+
+<div class="footer background-black-2 color-white v-padding-6">
+    <div class="container v-padding-5 h-padding-1">
+        <div class="partition partition-4">
+            <div class="logo small">
+            </div>
+        </div>
+        <div class="partition partition-8 align-right">
+            <sub class="text-small">
+                <span>주식회사 씨세론</span><br>
+                <span>대표: 윤영선 / 서울시 마포구 동교로 12길 36 3층</span><br>
+                <span>TEL: 02-336-3830 / FAX: 02-3144-3839</span><br>
+                <span>사업자등록번호: 367-81-00182 / 통신판매업 신고번호: 제2016-서울중구-0676호</span><br>
+            </sub>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="mobileOnly v-padding-6"></div>
+</div>
+
+
+</body>
+
+
+</html>
