@@ -970,7 +970,6 @@
         right: unset;
         bottom: unset;
         text-align: center;
-        
     }
     .apply-teacher img {
         width: 70%;
@@ -992,6 +991,9 @@
         display: inline-block;
         margin-right: unset;
         margin-bottom: 4px;
+    }
+    .desktopOnly {
+        display: none;
     }
 }
 
