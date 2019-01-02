@@ -429,6 +429,15 @@
     .openclass-list .openclass-item.show .openclass-item-video iframe {
         display: block;
     }
+    .text-big {
+        font-size: 3em;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -0.9px;
+        margin-bottom: .5em;
+    }
     .text-title {
         font-size: 2em;
         font-weight: bold;
@@ -843,8 +852,8 @@
     }
     .floating {
         width: auto;
-        height: 64px;
-        padding: 0px 12px 0px 64px;
+        height: 96px;
+        padding: 0px 12px 0px 96px;
         display: inline-block;
         position: fixed;
         right: 48px;
@@ -855,7 +864,7 @@
         background-image: url(https://s3.ap-northeast-2.amazonaws.com/deveos/kakaolink_btn_medium.png);
         background-size: auto 80%;
         background-position: 8px 50%;
-        line-height: 60px;
+        line-height: 96px;
         background-repeat: no-repeat;
         cursor: pointer;
         z-index: 200;
@@ -918,6 +927,10 @@
         padding: 0 20px;
         font-size: 1.2em;
     }
+    .text-big{
+        font-size: 2.4em;
+    }
+
     .partition {
         width: 100% !important;
         display: block;
@@ -991,6 +1004,13 @@
         display: inline-block;
         margin-right: unset;
         margin-bottom: 4px;
+    }
+    .floating {
+        right: 28px;
+        bottom: 28px;
+        height: 64px;
+        padding: 0px 12px 0px 64px;
+        line-height: 60px;
     }
     .desktopOnly {
         display: none;
