@@ -32,6 +32,8 @@
 	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script> -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
 	 crossorigin="anonymous">
+	 <link rel="stylesheet" type="text/css" href="//kenwheeler.github.io/slick//slick/slick.css" />
+	 <script type="text/javascript" src="//kenwheeler.github.io/slick//slick/slick.js"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125402791-1"></script>
@@ -67,6 +69,8 @@
 			</div>
 			<div class="header-right">
 				<div class="header-menu">
+					<a href="/">홈</a>
+					<div class="mobileOnly"></div>
 					<a href="/program">프로그램</a>
 					<div class="mobileOnly"></div>
 					<a href="/apply">수강신청</a>
@@ -81,7 +85,7 @@
 			<a class="header-more mobileOnly" href="#">
 				<i class="fas fa-bars"></i>
 			</a>
-		</div>	
+		</div>
 	</div>
 <div class="section background-black content-center color-white" style="background-image: url('https://s3.ap-northeast-2.amazonaws.com/deveos/%EC%88%98%EA%B0%95%EC%8B%A0%EC%B2%AD+%EB%A9%94%EC%9D%B8%EC%9D%B4%EB%AF%B8%EC%A7%80+(Medium).jpg');">
     <div class="background-image" style="background-color: rgba(0,0,0,.6);"></div>
@@ -104,9 +108,9 @@
             alt="" style="width: 100%;">
     </div>
 </div>
-<div class="section background-white v-padding-5">
+<div class="section background-white v-padding-9">
     <div class="container align-center">
-        <div class="v-padding-9">
+        <div class="v-padding-1">
             <span class="text-title">
                 커리큘럼 보기
             </span>
@@ -117,169 +121,194 @@
                 난이도별 다양한 교육과정이 준비되어 있습니다.
             </span>
         </div>
-        <br>
-        <br>
-        <div class="partition partition-3 h-padding-1">
-            <div class="program color-black">
-                <div class="background-highlight color-white v-padding-1">
-                    <span class="text-subtitle">
-                        3주 비즈니스 과정
-                    </span>
-                </div>
-                <div class="background-gray h-padding-1 v-padding-1">
-                    <span class="">
-                        블록체인 비즈니스를 구현하려면
-                    </span>
+    </div>
+</div>
+<div class="section background-gray v-padding-9" style="background-color: #fafafa;">
+    <div class="container align-center">
+        <div class="partition partition-2">
+            &nbsp;
+        </div>
+        <div class="partition partition-8">
+            <div class="program-header">
+                <div class="program-header-item show" style="color: #8c9ffb;">
+                    <sup>★</sup>
                     <br>
-                    <br>
-                    <span class="text-title text-bold">
-                        비즈니스를 위한<br>
-                        블록체인의 이해<br>
-                    </span>
+                    <span>비즈니스</span>
                 </div>
-                <br>
-                <span class="color-black h-padding-3" style="display: block;">
-                    블록체인 비즈니스 입문자를<br>
-                    위한 블록체인의 기초 개념<br>
-                    및 사업적 특성 이해<br>
+                <div class="program-header-item" style="color: #6a7dd9;">
+                    <sup>★★</sup>
+                    <br>
+                    <span>개발입문</span>
+                </div>
+                <div class="program-header-item" style="color: #485bb7;">
+                    <sup>★★★</sup>
+                    <br>
+                    <span>개발심화</span>
+                </div>
+                <div class="program-header-item" style="color: #263995;">
+                    <sup>★★★★</sup>
+                    <br>
+                    <span>개발실무</span>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="program-list">
+                <div class="program color-black">
+                    <div class="b1ackground-gray h-padding-1 v-padding-1 partition partition-12">
+                        <span class="">
+                            블록체인 비즈니스를 구현하려면
+                        </span>
+                        <br>
+                        <br>
+                        <span class="text-subtitle text-bold">
+                            비즈니스를 위한<br>
+                            블록체인의 이해<br>
+                        </span>
+                    </div>
+                    <div class="partition partition-12">
+                        <div class="title-bar"></div>
+                        <div class="color-black v-padding-1">
+                            <span class=" text-bold">
+                                3주 비즈니스 과정
+                            </span>
+                        </div>
+                        <span class="color-black h-padding-3" style="display: none;">
+                            블록체인 비즈니스 입문자를<br>
+                            위한 블록체인의 기초 개념<br>
+                            및 사업적 특성 이해<br>
+                        </span>
+                        <span class="color-black" style="display: block;">
+                            시간 및 장소<br>
+                            추후 공지<br>
+                        </span>
+                        <br>
+                        <a id="btn_course_detail_1" class="button button-glass" href="/apply/1">자세히 보기</a><br>
+                        <br>
 
-                </span>
-                <div class="title-bar"></div>
-                <span class="color-black" style="display: block;">
-                    시간 및 장소<br>
-                    추후 공지<br>
-                </span>
-                <br>
-                <br>
+                    </div>
+                </div>
+                <div class="program color-black">
+                    <div class="b1ackground-gray h-padding-1 v-padding-1 partition partition-12">
+                        <span class="">
+                            블록체인 개발을 시작해보려면
+                        </span>
+                        <br>
+                        <br>
+                        <span class="text-subtitle text-bold">
+                            EOS 블록체인<br>
+                            개발 기초<br>
+                        </span>
+                    </div>
+                    <div class="partition partition-12">
+                        <div class="title-bar"></div>
+                        <div class="color-black v-padding-1">
+                            <span class=" text-bold">
+                                3주 기초 개발자 과정
+                            </span>
+                        </div>
+                        <span class="color-black h-padding-3" style="display: none;">
+                            블록체인 개발의 구체적<br>
+                            과정을 습득, 예제와 실습을<br>
+                            통한 EOSIO 개발 입문<br>
+                        </span>
+                        <span class="color-black" style="display: block;">
+                            시간 및 장소<br>
+                            매주 화요일 19:00 ~ 22:00, 합정역<br>
+                        </span>
+                        <br>
+                        <a id="btn_course_detail_2" class="button button-glass" href="/apply/2">자세히 보기</a><br>
+                        <br>
+
+                    </div>
+                </div>
+                <div class="program color-black">
+                    <div class="b1ackground-gray h-padding-1 v-padding-1 partition partition-12">
+                        <span class="">
+                            나만의 dAPP을 만들어보려면
+                        </span>
+                        <br>
+                        <br>
+                        <span class="text-subtitle text-bold">
+                            실전 EOS<br>
+                            dAPP의 개발<br>
+                        </span>
+                    </div>
+                    <div class="partition partition-12">
+                        <div class="title-bar"></div>
+                        <div class="color-black v-padding-1">
+                            <span class=" text-bold">
+                                4주 심화 개발자 과정
+                            </span>
+                        </div>
+                        <span class="color-black h-padding-3" style="display: none;">
+                            EOSIO를 활용한 스마트<br>
+                            컨트랙트와 실제<br>
+                            EOSIO dAPP 개발 및 구현<br>
+                        </span>
+                        <span class="color-black" style="display: block;">
+                            시간 및 장소<br>
+                            매주 목요일 19:00 ~ 22:00, 강남역<br>
+                        </span>
+                        <br>
+                        <a id="btn_course_detail_3" class="button button-glass" href="/apply/3">자세히 보기</a><br>
+                        <br>
+                    </div>
+                </div>
+                <div class="program color-black">
+                    <div class="b1ackground-gray h-padding-1 v-padding-1 partition partition-12">
+                        <span class="">
+                            전문 블록체인 개발자가 되려면
+                        </span>
+                        <br>
+                        <br>
+                        <span class="text-subtitle text-bold">
+                            EOS Dapp<br>
+                            현업 실무자 캠프<br>
+                        </span>
+                    </div>
+                    <div class="partition partition-12">
+                        <div class="title-bar"></div>
+                        <div class="color-black v-padding-1">
+                            <span class=" text-bold">
+                                4주 실무자 과정
+                            </span>
+                        </div>
+                        <span class="color-black h-padding-3" style="display: none;">
+                            dAPP 개발 관련 최신 동향<br>
+                            및 전문 개발 이슈의<br>
+                            공유 및 네트워킹<br>
+                        </span>
+                        <span class="color-black" style="display: block;">
+                            시간 및 장소<br>
+                            추후 공지<br>
+                        </span>
+                        <br>
+                        <a id="btn_course_detail_4" class="button button-glass" href="/apply/4">자세히 보기</a><br>
+                        <br>
+
+                    </div>
+                </div>
             </div>
-            <br>
-            <a id="btn_course_detail_1" class="button button-glass" href="/apply/1">자세히 보기</a><br>
-            <!-- <a id="btn_course_apply_1" class="button button-highlight button-small" href="https://goo.gl/forms/KEMtEL3YtBVkTisz1"
-                target="_blank">예약 신청하기</a> -->
         </div>
-        <div class="partition partition-3 h-padding-1">
-            <div class="program color-black">
-                <div class="background-highlight color-white v-padding-1">
-                    <span class="text-subtitle">
-                        3주 기초 개발자 과정
-                    </span>
-                </div>
-                <div class="background-gray h-padding-1 v-padding-1">
-                    <span class="">
-                        블록체인 개발을 시작해보려면
-                    </span>
-                    <br>
-                    <br>
-                    <span class="text-title text-bold">
-                        EOS 블록체인<br>
-                        개발 기초<br>
-                    </span>
-                </div>
-                <br>
-                <span class="color-black h-padding-3" style="display: block;">
-                    블록체인 개발의 구체적<br>
-                    과정을 습득, 예제와 실습을<br>
-                    통한 EOSIO 개발 입문<br>
-                </span>
-                <div class="title-bar"></div>
-                <span class="color-black" style="display: block;">
-                    시간 및 장소<br>
-                    매주 화요일 19:00 ~ 22:00, 합정역<br>
-                </span>
-                <br>
-                <br>
-            </div>
-            <br>
-            <a id="btn_course_detail_2" class="button button-glass" href="/apply/2">자세히 보기</a><br>
-            <!-- <a id="btn_course_apply_2" class="button button-highlight button-small" href="https://docs.google.com/forms/d/e/1FAIpQLSdiGYbEzQNltQy8LTTNQ4QhPwUMUnMGrVNzDtT9UFgkRKxieQ/viewform?usp=sf_link"
-                target="_blank">신청하기</a> -->
-        </div>
-        <div class="partition partition-3 h-padding-1">
-            <div class="program color-black">
-                <div class="background-highlight color-white v-padding-1">
-                    <span class="text-subtitle">
-                        4주 심화 개발자 과정
-                    </span>
-                </div>
-                <div class="background-gray h-padding-1 v-padding-1">
-                    <span class="">
-                        나만의 dAPP을 만들어보려면
-                    </span>
-                    <br>
-                    <br>
-                    <span class="text-title text-bold">
-                        실전 EOS<br>
-                        dAPP의 개발<br>
-                    </span>
-                </div>
-                <br>
-                <span class="color-black h-padding-3" style="display: block;">
-                    EOSIO를 활용한 스마트<br>
-                    컨트랙트와 실제<br>
-                    EOSIO dAPP 개발 및 구현<br>
-                </span>
-                <div class="title-bar"></div>
-                <span class="color-black" style="display: block;">
-                    시간 및 장소<br>
-                    매주 목요일 19:00 ~ 22:00, 강남역<br>
-                </span>
-                <br>
-                <br>
-            </div>
-            <br>
-            <a id="btn_course_detail_3" class="button button-glass" href="/apply/3">자세히 보기</a><br>
-            <!-- <a id="btn_course_apply_3" class="button button-highlight button-small" href="https://docs.google.com/forms/d/e/1FAIpQLSe8liokBKRV5iYTylYr2KZ4zrETkXG6v5WRFGKfKVWiinoiUA/viewform?usp=sf_link"
-                target="_blank">친청하기</a> -->
-        </div>
-        <div class="partition partition-3 h-padding-1">
-            <div class="program color-black">
-                <div class="background-highlight color-white v-padding-1">
-                    <span class="text-subtitle">
-                        4주 실무자 과정
-                    </span>
-                </div>
-                <div class="background-gray h-padding-1 v-padding-1">
-                    <span class="">
-                        전문 블록체인 개발자가 되려면
-                    </span>
-                    <br>
-                    <br>
-                    <span class="text-title text-bold">
-                        EOS Dapp<br>
-                        현업 실무자 캠프<br>
-                    </span>
-                </div>
-                <br>
-                <span class="color-black h-padding-3" style="display: block;">
-                    dAPP 개발 관련 최신 동향<br>
-                    및 전문 개발 이슈의<br>
-                    공유 및 네트워킹<br>
-                </span>
-                <div class="title-bar"></div>
-                <span class="color-black" style="display: block;">
-                    시간 및 장소<br>
-                    추후 공지<br>
-                </span>
-                <br>
-                <br>
-            </div>
-            <br>
-            <a id="btn_course_detail_4" class="button button-glass" href="/apply/4">자세히 보기</a><br>
-            <!-- <a id="btn_course_apply_4" class="button button-highlight button-small" href="https://goo.gl/forms/KEMtEL3YtBVkTisz1"
-                target="_blank">예약 신청하기</a> -->
-        </div>
-        <div class="clearfix"></div>
-        <div class="partition partition-12 v-padding-9">
-            <!-- <span class="text-subtitle">
+    </div>
+    <div class="partition partition-2">
+        &nbsp;
+    </div>
+
+
+    <div class="clearfix"></div>
+    <!--  <div class="partition partition-12 v-padding-9">
+      <span class="text-subtitle">
                 강연에 대한 더 자세한 정보가 알고 싶으신가요?
             </span>
             &nbsp;
             &nbsp;
             &nbsp;
-            <a class="button button-highlight button-small" href="/program">모든 강연 보기</a> -->
-        </div>
-        <div class="clearfix"></div>
+            <a class="button button-highlight button-small" href="/program">모든 강연 보기</a>
     </div>
+    <div class="clearfix"></div>
+     -->
+</div>
 </div>
 <script src="/js/common.js"></script>
 

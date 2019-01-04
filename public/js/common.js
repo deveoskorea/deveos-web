@@ -40,19 +40,32 @@ $(document).ready(function () {
         }
     }
 
+    changeCurrentHeaderMenuColor();
 
     $(".program-list").slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
         speed: 500,
         infinite: false
-	});
+    });
 
-    $("body").on("click", ".header-more", function () {
+    $(".program-list").on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        console.log(nextSlide);
+        $(".program-header-item").removeClass("show");
+        $(".program-header-item:eq(" + nextSlide + ")").addClass("show");
+    });
+
+    $("body").on("click", ".program-header-item", function (e) {
+        e.preventDefault();
+        var clickedIndex = $(".program-header-item").index(this);
+        $(".program-list").slick("slickGoTo", clickedIndex);
+    });
+
+    $("body").on("click", ".header-more", function (e) {
+        e.preventDefault();
         $(".header-menu").toggleClass("show");
     })
-    changeCurrentHeaderMenuColor();
 
 
 
@@ -65,7 +78,7 @@ $(document).ready(function () {
         $(".openclass-item.show").html($(".openclass-item.show").html());
         $(".openclass-item").removeClass("show");
 
-        if(!isClose){
+        if (!isClose) {
             $(this).addClass("show");
         }
 
