@@ -38,47 +38,47 @@ var pages = require("node-github-pages")(app, {
 pages.renderFiles([{
   "view": "index",
   "url": "",
-  "options": {}
+  "options": { title: "devEOS | 진짜 전문가에게 배우는 블록체인 개발" }
 },
 {
   "view": "course",
   "url": "/program",
-  "options": {}
+  "options": { title: "프로그램 소개 | devEOS" }
 },
 {
   "view": "course-detail-1",
   "url": "/apply/1",
-  "options": {}
+  "options": { title: "비즈니스를 위한 블록체인의 이해 | 수강신청 | devEOS" }
 },
 {
   "view": "course-detail-2",
   "url": "/apply/2",
-  "options": {}
+  "options": { title: "비즈니스를 위한 블록체인의 이해 | 수강신청 | devEOS" }
 },
 {
   "view": "course-detail-3",
   "url": "/apply/3",
-  "options": {}
+  "options": { title: "비즈니스를 위한 블록체인의 이해 | 수강신청 | devEOS" }
 },
 {
   "view": "course-detail-4",
   "url": "/apply/4",
-  "options": {}
+  "options": { title: "비즈니스를 위한 블록체인의 이해 | 수강신청 | devEOS" }
 },
 {
   "view": "application",
   "url": "/apply",
-  "options": {}
+  "options": { title: "수강신청 | devEOS" }
 },
 {
   "view": "openclass",
   "url": "/openclass",
-  "options": {}
+  "options": { title: "openclass | devEOS" }
 },
 {
   "view": "contact",
   "url": "/contact",
-  "options": {}
+  "options": { title: "고객센터 | devEOS" }
 }]);
 
 // error handler
