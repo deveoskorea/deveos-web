@@ -24,7 +24,6 @@ $(document).ready(function () {
 
     setInterval(function () {
         var last = $(".review-item:first-child");
-        console.log(last);
         $(".review-list").append(last[0].outerHTML);
         $(last).remove();
     }, 2000);
@@ -33,19 +32,40 @@ $(document).ready(function () {
     var changeCurrentHeaderMenuColor = function () {
         var i = 0;
         var menus = $(".header-menu a");
-        for (i = 0; i < menus.length; i++) {
-            if (window.location.href.indexOf($(menus[i]).attr("href")) > 0) {
+        for (i = menus.length - 1; i >= 0; i--) {
+            if (window.location.pathname.indexOf($(menus[i]).attr("href")) >= 0) {
                 $(menus[i]).addClass("selected");
                 break;
             }
         }
     }
 
+    changeCurrentHeaderMenuColor();
 
-    $("body").on("click", ".header-more", function () {
+    $(".program-list").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        speed: 500,
+        infinite: false
+    });
+
+    $(".program-list").on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        console.log(nextSlide);
+        $(".program-header-item").removeClass("show");
+        $(".program-header-item:eq(" + nextSlide + ")").addClass("show");
+    });
+
+    $("body").on("click", ".program-header-item", function (e) {
+        e.preventDefault();
+        var clickedIndex = $(".program-header-item").index(this);
+        $(".program-list").slick("slickGoTo", clickedIndex);
+    });
+
+    $("body").on("click", ".header-more", function (e) {
+        e.preventDefault();
         $(".header-menu").toggleClass("show");
     })
-    changeCurrentHeaderMenuColor();
 
 
 
@@ -58,7 +78,7 @@ $(document).ready(function () {
         $(".openclass-item.show").html($(".openclass-item.show").html());
         $(".openclass-item").removeClass("show");
 
-        if(!isClose){
+        if (!isClose) {
             $(this).addClass("show");
         }
 
