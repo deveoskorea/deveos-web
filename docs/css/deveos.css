@@ -1109,16 +1109,26 @@
         display: none;
     }
 }
-@media screen and (min-width: 1440px){
-    .container{
-        max-width: 1531.91px;
-        font-size: 18px;
+
+@media screen and (min-width: 1440px) {
+    body {
+        font-size: 17px;
+    }
+    .container {
+        max-width: 1532px;
     }
 }
-@media screen and (min-width: 1920px){
-    .container{
-        max-width: 2042.55px;
-        font-size: 20px;
+
+@media screen and (min-width: 1920px) {
+    body {
+        font-size: 18px;
+    }
+    .header .container {
+        height: 100%;
+        max-width: 2696px;
+    }
+    .container {
+        max-width: 1702px;
     }
 }
 
