@@ -384,7 +384,8 @@
         height: auto;
         position: absolute;
         right: 0;
-        bottom: -5px;
+        bottom: 0;
+        font-size: 0;
         overflow: visible;
     }
     .apply-teacher img {
