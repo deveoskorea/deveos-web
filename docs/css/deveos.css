@@ -487,6 +487,7 @@
         height: auto;
         position: relative;
     }
+    .openclass-list .openclass-item .openclass-item-thumbnail .openclass-item-description {}
     .openclass-list .openclass-item .openclass-item-video {
         width: 0%;
         height: auto;
@@ -1024,6 +1025,13 @@
         display: block;
         float: unset;
         margin-bottom: 1em;
+    }
+    .openclass-list .openclass-item .openclass-item-thumbnail .openclass-item-description {
+        display: none;
+    }
+    
+    .openclass-list .openclass-item.show .openclass-item-thumbnail .openclass-item-description{
+        display: block;
     }
     .openclass-list .openclass-item .openclass-item-video {
         width: 0%;
