@@ -314,6 +314,7 @@
         font-size: 0;
         color: transparent;
         z-index: 100;
+        cursor: pointer;
     }
     .program-list .slick-arrow::after {
         content: '>';
@@ -814,6 +815,9 @@
         display: inline-block;
         margin-right: 15px;
         margin-bottom: 4px;
+    }
+    .pb{
+        word-break: break-all;
     }
     .review-list {
         width: 100%;

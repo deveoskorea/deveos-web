@@ -83,4 +83,43 @@ $(document).ready(function () {
         }
 
     })
+
+
+
+    var timerPrettyBreak;
+    var fnPrettyBreak = function () {
+        if (timerPrettyBreak) {
+            clearTimeout(timerPrettyBreak);
+        }
+        timerPrettyBreak = setTimeout(function () {
+            var pbs = $(".pb");
+            var i = 0;
+            for (i = 0; i < pbs.length; i++) {
+                var pb = pbs[i];
+                $(pb).css("width", "");
+                var lastHeight = $(pb).height();
+                var lastWdith = $(pb).width();
+                while (true) {
+
+
+
+                    $(pb).css("display", "inline-block");
+                    $(pb).width(lastWdith - 1);
+                    if ($(pb).height() > lastHeight) {
+                        $(pb).width(lastWdith);
+                        break;
+                    }
+                    lastWdith--;
+                    if (lastWdith <= 0) {
+                        $(pb).css("width", "");
+                        break;
+                    }
+                }
+            }
+        }, 10);
+
+    };
+    $(window).on("resize", fnPrettyBreak);
+    fnPrettyBreak();
+
 })
