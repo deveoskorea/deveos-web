@@ -22,8 +22,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 
-
-
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
@@ -53,17 +51,17 @@ pages.renderFiles([{
 {
   "view": "course-detail-2",
   "url": "/apply/2",
-  "options": { title: "비즈니스를 위한 블록체인의 이해 | 수강신청 | devEOS" }
+  "options": { title: "EOSIO 개발 기초 입문자 과정 | 수강신청 | devEOS" }
 },
 {
   "view": "course-detail-3",
   "url": "/apply/3",
-  "options": { title: "비즈니스를 위한 블록체인의 이해 | 수강신청 | devEOS" }
+  "options": { title: "EOSIO Dapp 심화 개발자 과정 | 수강신청 | devEOS" }
 },
 {
   "view": "course-detail-4",
   "url": "/apply/4",
-  "options": { title: "비즈니스를 위한 블록체인의 이해 | 수강신청 | devEOS" }
+  "options": { title: "EOS Dapp 실무자 캠프 | 수강신청 | devEOS" }
 },
 {
   "view": "application",
