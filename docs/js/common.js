@@ -121,5 +121,6 @@ $(document).ready(function () {
     };
     $(window).on("resize", fnPrettyBreak);
     fnPrettyBreak();
+    setTimeout(fnPrettyBreak, 100);
 
 })
