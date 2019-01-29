@@ -186,7 +186,7 @@
     .background-white {
         background-color: #ffffff;
     }
-    .background-red{
+    .background-red {
         background-color: #ff3b3b;
     }
     .background-highlight {
@@ -307,6 +307,26 @@
         border-top: none;
         background-color: #ffffff;
         overflow: visible;
+        background-size: 40% auto;
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .program-list::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #ffffff;
+        opacity: 1;
+        -webkit-transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -o-transition: opacity .25s ease-in-out;
+        transition: opacity .25s ease-in-out;
+    }
+    .program-list.background-show::before {
+        opacity: 0;
     }
     .program-list .slick-arrow {
         width: 48px;
@@ -354,7 +374,10 @@
         position: relative;
         /* border: 1px solid #263995; */
         /* box-shadow: 0 4px 8px 0 #9b9b9b; */
-        padding: 1em 0;
+        padding-top: 4em;
+    }
+    .program .program-image {
+        display: none;
     }
     .title-bar {
         width: 100%;
@@ -580,7 +603,7 @@
         height: auto;
         position: relative;
         display: inline-block;
-        padding: 18px 30px;
+        padding: 12px 30px;
         background-color: transparent;
         border: 1px solid transparent;
         border-radius: 2.5em;
@@ -606,10 +629,20 @@
         color: #21232a;
         border-color: #ffffff;
     }
+    .button-white:hover {
+        background-color: #263995;
+        color: #ffffff;
+        border-color: #263995;
+    }
     .button-highlight {
         background-color: #263995;
         color: #ffffff;
         border-color: #263995;
+    }
+    .button-highlight:hover {
+        background-color: #ffffff;
+        color: #263995;
+        border-color: #ffffff;
     }
     .button-glass {
         background-color: transparent;
@@ -659,7 +692,7 @@
     .border-highlight {
         border: 3px solid #263995;
     }
-    .border-radius{
+    .border-radius {
         border-radius: 13px;
     }
     .display-inline-block {
@@ -1053,11 +1086,10 @@
     .text-big {
         font-size: 2.4em;
     }
-    .decorate-bottom{
+    .decorate-bottom {
         text-decoration: underline solid #ff3b3b;
-        
     }
-    .decorate-bottom::before{
+    .decorate-bottom::before {
         display: none;
     }
     .partition {
@@ -1065,6 +1097,15 @@
         display: block;
         float: unset;
         margin-bottom: 1em;
+    }
+    .program-list.background-show::before {
+        opacity: 1;
+    }
+    .program .program-image{
+        display: block;
+        width: 100%;
+        background-color: #f0f0f0;
+        border-radius: 50%;
     }
     .openclass-list .openclass-item .openclass-item-thumbnail .openclass-item-description {
         display: none;

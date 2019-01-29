@@ -51,9 +51,16 @@ $(document).ready(function () {
     });
 
     $(".program-list").on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-        console.log(nextSlide);
         $(".program-header-item").removeClass("show");
         $(".program-header-item:eq(" + nextSlide + ")").addClass("show");
+        $(".program-list").removeClass("background-show");
+        setTimeout(function () {
+            var elProgramImage = $(".program:eq(" + nextSlide + ") .program-image").attr("src");
+            $(".program-list").css("background-image", "url(" + elProgramImage + ")");
+            $(".program-list").addClass("background-show");
+        }, 250);
+    });
+    $(".program-list").on('afterChange', function (event, slick, currentSlide) {
     });
 
     $("body").on("click", ".program-header-item", function (e) {
