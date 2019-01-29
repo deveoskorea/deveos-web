@@ -640,9 +640,9 @@
         border-color: #263995;
     }
     .button-highlight:hover {
-        background-color: #ffffff;
+        background-color: #ececec;
         color: #263995;
-        border-color: #ffffff;
+        border-color: #ececec;
     }
     .button-glass {
         background-color: transparent;
@@ -1101,7 +1101,7 @@
     .program-list.background-show::before {
         opacity: 1;
     }
-    .program .program-image{
+    .program .program-image {
         display: block;
         width: 100%;
         background-color: #f0f0f0;
