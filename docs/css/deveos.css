@@ -440,6 +440,11 @@
         border-radius: 50%;
         background-color: #263995;
     }
+    li {
+        text-indent: -1.5em;
+        padding-left: 1.5em;
+        list-style-position: inside;
+    }
     .qna-list {
         width: 80%;
         height: auto;
@@ -557,6 +562,7 @@
         line-height: normal;
         letter-spacing: -0.9px;
         margin-bottom: .5em;
+        line-height: 1.2em;
     }
     .text-title {
         font-size: 2em;
@@ -786,6 +792,10 @@
     .h-padding-5 {
         padding-left: 3em !important;
         padding-right: 3em !important;
+    }
+    .h-padding-6 {
+        padding-left: 3.5em !important;
+        padding-right: 3.5em !important;
     }
     .teacher {
         position: relative;
