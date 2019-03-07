@@ -269,12 +269,15 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        display: table;
+        border-collapse: separate;
+        border-spacing: 0 0;
     }
     .program-header .program-header-item {
         width: 25%;
         height: auto;
+        display: table-cell;
         position: relative;
-        float: left;
         padding: 1em 0;
         text-align: center;
         cursor: pointer;
@@ -283,6 +286,7 @@
         border-top-left-radius: 16px;
         border-top-right-radius: 16px;
         line-height: 1em;
+        vertical-align: bottom;
     }
     .program-header .program-header-item span {
         text-decoration: underline;

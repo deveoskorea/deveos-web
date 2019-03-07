@@ -84,6 +84,21 @@ pages.renderFiles([{
   "options": { title: "실전 블록체인 애플리케이션(dApp) 개발 | 수강신청 | devEOS" }
 },
 {
+  "view": "course-detail-9",
+  "url": "/apply/9",
+  "options": { title: "백서로 뜯어보는 EOSIO 아키텍처와 기술동향 | 수강신청 | devEOS" }
+},
+{
+  "view": "course-detail-10",
+  "url": "/apply/10",
+  "options": { title: "처음 시작하는 블록체인 개발 3주 입문 | 수강신청 | devEOS" }
+},
+{
+  "view": "course-detail-11",
+  "url": "/apply/11",
+  "options": { title: "블록체인 애플리케이션(dAPP) 개발 실전 | 수강신청 | devEOS" }
+},
+{
   "view": "application",
   "url": "/apply",
   "options": { title: "수강신청 | devEOS" }
