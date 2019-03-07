@@ -47,7 +47,8 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplay: false,
         speed: 500,
-        infinite: false
+        infinite: false,
+        initialSlide: 1
     });
 
     $(".program-list").on('beforeChange', function (event, slick, currentSlide, nextSlide) {
