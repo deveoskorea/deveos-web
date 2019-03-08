@@ -289,7 +289,7 @@
         vertical-align: bottom;
     }
     .program-header .program-header-item span {
-        text-decoration: underline;
+        /* text-decoration: underline; */
     }
     .program-header .program-header-item sup {
         text-decoration: none;
